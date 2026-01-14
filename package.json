@@ -3,5 +3,8 @@
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.8"
   },
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
 }
