@@ -6,12 +6,12 @@ test.describe('ログインリグレッションテスト', () => {
         const loginPage = new LoginPage(page);
 
         // 環境変数から認証情報を取得（MCPの定義に準拠）
-        const email = process.env.ADMIN_USER_EMAIL;
-        const password = process.env.ADMIN_USER_PASSWORD;
+        const email = process.env.OWNER_USER_EMAIL;
+        const password = process.env.OWNER_USER_PASSWORD;
 
         // 環境変数が設定されていない場合はエラー
         if (!email || !password) {
-            throw new Error('ADMIN_USER_EMAILと ADMIN_USER_PASSWORD の環境変数が設定されていません');
+            throw new Error('OWNER_USER_EMAILと OWNER_USER_PASSWORD の環境変数が設定されていません');
         }
 
         // 1. /users/sign_in にアクセス（MCPの操作手順1）
